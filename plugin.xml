@@ -13,6 +13,7 @@
             <feature name="HTTPMBTilesServer">
                 <param name="android-package" value="uk.ac.edina.mobile.cordova.plugins.httpmbtiles.HTTPMBTilesServer"/>
             </feature>
+            <access origin="http://localhost/*" />
         </config-file>
 
         <source-file src="src/android/NanoHTTPD.java" target-dir="src/fi/iki/elonen/" />
