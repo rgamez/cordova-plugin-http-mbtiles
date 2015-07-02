@@ -7,6 +7,9 @@
     <license>BSD-3</license>
 
     <dependency id="cordova-plugin-file" url="https://git-wip-us.apache.org/repos/asf/cordova-plugin-file.git"/>
+    <js-module name="Promise" src="www/Promise.js">
+        <clobbers target="Promise" />
+    </js-module>
     <js-module name="HTTPMBTiles" src="www/HTTPMBTiles.js">
         <clobbers target="cordova.plugins.HTTPMBTiles" />
     </js-module>
