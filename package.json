@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-httpmbtiles",
+  "version": "0.1.0",
+  "description": "A Cordova plugin for serving MBtiles via an embedded HTTP server",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rgamez/cordova-plugin-http-mbtiles.git"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Ruben Gamez",
+  "license": "BSD-3"
+}

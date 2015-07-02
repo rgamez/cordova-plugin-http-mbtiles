@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="uk.ac.edina.mobile.cordova.plugins.httpmbtiles" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-httpmbtiles"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        version="0.1.0">
     <name>HTTPMBTiles</name>
+    <description>A Cordova plugin for serving MBtiles via an embedded HTTP server</description>
+    <license>BSD-3</license>
     <js-module name="HTTPMBTiles" src="www/HTTPMBTiles.js">
         <clobbers target="cordova.plugins.HTTPMBTiles" />
     </js-module>
