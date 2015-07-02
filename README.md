@@ -32,7 +32,7 @@ HTTPMBTiles
 	.startServer()
 	.then(function(serverConfig) {
 		port = serverConfig.port;
-		console.debug(serverConfig.port)	
+		console.debug(serverConfig.port)
 	});
 ```
 
@@ -70,7 +70,7 @@ map.addLayer(
         })
     })
 );
-  
+
 
 ```
 
@@ -82,4 +82,4 @@ map.addLayer(
 ### Alternatives
 
 - [cordova-plugin-mbtiles](https://github.com/ffournier/cordova-plugin-mbtiles) is the most mature MBtiles plugin out there.
-- FieldTrip Open uses a custom implementation in its [overlays](https://github.com/edina/fieldtrip-overlays)plugin, an early explanation from the idea behind [here](http://blogs.edina.ac.uk/category/mbtiles/)
+- FieldTrip-Open uses a custom implementation in its [overlays](https://github.com/edina/fieldtrip-overlays) plugin, an early explanation from the idea behind [here](https://mobilegeo.wordpress.com/2013/06/07/mbtiles-and-openlayers/)
