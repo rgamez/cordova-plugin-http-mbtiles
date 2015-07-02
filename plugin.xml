@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="uk.ac.edina.mobile.cordova.plugins.httpmbtiles" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>HTTPMBTiles</name>
+    <js-module name="HTTPMBTiles" src="www/HTTPMBTiles.js">
+        <clobbers target="cordova.plugins.HTTPMBTiles" />
+    </js-module>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="HTTPMBTilesServer">
+                <param name="android-package" value="uk.ac.edina.mobile.cordova.plugins.httpmbtiles.HTTPMBTilesServer"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/NanoHTTPD.java" target-dir="src/fi/iki/elonen/" />
+        <source-file src="src/android/HTTPMBTilesServer.java" target-dir="src/uk/ac/edina/mobile/cordova/plugins/httpmbtiles/" />
+        <source-file src="src/android/MBTiles.java" target-dir="src/uk/ac/edina/mobile/cordova/plugins/httpmbtiles/" />
+        <source-file src="src/android/GeoUtils.java" target-dir="src/uk/ac/edina/mobile/cordova/plugins/httpmbtiles/" />
+    </platform>
+</plugin>
