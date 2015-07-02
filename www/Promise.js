@@ -182,7 +182,7 @@
 	};
 
 	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = Promise;
+		module.exports = root.Promise || Promise;
 	} else if (!root.Promise) {
 		root.Promise = Promise;
 	}
