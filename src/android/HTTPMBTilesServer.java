@@ -80,7 +80,11 @@ public class HTTPMBTilesServer extends CordovaPlugin {
             jsonObject.put("error", 0);
 
             if (bounds != null) {
-                jsonObject.put("bounds", new JSONArray(bounds));
+                JSONArray boundsJSON = new JSONArray();
+                for (int i = 0; i < bounds.length; i++) {
+                    boundsJSON.put(bounds[i]);
+                }
+                jsonObject.put("bounds", boundsJSON);
             }
 
             callbackContext.success(jsonObject);
